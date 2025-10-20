@@ -17,19 +17,20 @@
     <span class="icon sun" aria-hidden="true">🌞</span>
     <span class="icon moon" aria-hidden="true">🌙</span>
     <span class="knob" aria-hidden="true"></span>
+    </button>
   </header>
 
   <nav class="navegacion">
     <a class="navegacion__enlace" href="index.html">Tienda</a>
-    <a class="navegacion__enlace" href="listado_tabla.html">Lista de Productos</a>
-    <a class="navegacion__enlace" href="listado_box.html">Catálogo</a>
-    <a class="navegacion__enlace navegacion__enlace--activo" href="comprar.html">Comprar</a>
+    <a class="navegacion__enlace" href="listado_tabla.html#contenido"">Lista de Productos</a>
+    <a class="navegacion__enlace" href="listado_box.html#contenido"">Catálogo</a>
+    <a class="navegacion__enlace navegacion__enlace--activo" href="comprar.html#contenido"">Comprar</a>
   </nav>
 
-  <main class="contenedor">
+  <main id="contenido" class="ancla-destino contenedor">
     <h1>Formulario de compra</h1>
 
-    <form class="formulario" action="#" method="post">
+    <form class="formulario" action="#" method="post" novalidate>
       <input class="formulario__campo" type="text" name="nombre" placeholder="Nombre del cliente" required>
       <input class="formulario__campo" type="text" name="direccion" placeholder="Dirección" required>
       <input class="formulario__campo" type="tel"  name="telefono" placeholder="Teléfono" required>
@@ -99,11 +100,18 @@
   </footer>
 <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-  <script src="js/modo.js"></script>
-  <script src="js/auth.js"></script>
-  <script src="js/comprar.js"></script>
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+<script defer src="js/validacion.js"></script>
+
+<script defer src="js/modo.js"></script>
+<script defer src="js/auth.js"></script>
+<script defer src="js/comprar.js"></script>
+
   <script>
     requireAuth();
   </script>
+
 </body>
 </html>
