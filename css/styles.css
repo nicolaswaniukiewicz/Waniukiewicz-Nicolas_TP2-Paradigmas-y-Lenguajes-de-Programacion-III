@@ -756,4 +756,15 @@ body.light-mode .mediode_pago input[type="number"]{
   cursor: pointer;
 }
 
+.is-invalid { 
+  border-color: #ff6b6b; 
+}
+label.error { 
+  color: #ff6b6b; 
+  font-size: 1.8rem; 
+  margin-top: .25rem; 
+  display: block; }
+
+
+
 
